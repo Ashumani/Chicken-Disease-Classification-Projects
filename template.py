@@ -22,7 +22,8 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trials.ipynb"
+    "research/trials.ipynb",
+    "templates/index.html"
 ]
 
 
@@ -38,6 +39,6 @@ for filepath in list_of_files:
     if( not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass
-            logging.info(f"Creating Emptyu file : {filepath}")
+            logging.info(f"Creating Empty file : {filepath}")
     else:
         logging.info(f"{filename} is already exists")
